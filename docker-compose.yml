@@ -1,0 +1,20 @@
+version: '3.3'
+
+# services the app will use
+services:
+  app:
+    # configuration and instructions for the build step
+    build:
+      # sets the context of running docker-compose to the current container
+      context: .
+      # maps host port to container port
+    ports:
+      - '8000:8000'
+    # creates a volume that maps a directory to a container directory
+    # this allows for updates in the container when local changes
+    # are made without restarting the container
+    # [local app dir]:[container dir]
+    volumes:
+      - ./app:/app
+    command: >
+      sh -c 'python manage.py runserve 0.0.0.0:8000'
