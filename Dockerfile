@@ -14,7 +14,7 @@ WORKDIR /app
 # copy local app directory to image app directory
 COPY ./app /app
 
-# creates a user to run the account from
+# creates a user to own and run the applicaton,
 # prevents root user from being used
 RUN adduser -D user
 USER user
