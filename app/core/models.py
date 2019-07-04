@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, \
                                        PermissionsMixin
+# recommended way to retrieve settings
+from django.conf import settings
 
 
 class UserManager(BaseUserManager):
@@ -26,7 +28,9 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser, PermissionsMixin):
-    """Custom user model that supports using email instead of username"""
+    """
+    Custom user model that supports using email instead of username
+    """
     email = models.EmailField(max_length=255, unique=True)
     name = models.CharField(max_length=255)
     is_active = models.BooleanField(default=True)
@@ -35,3 +39,22 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
 
     USERNAME_FIELD = 'email'
+
+
+class Tag(models.Model):
+    """
+    Tag to be used for a recipe
+    """
+    name = models.CharField(max_length=255)
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        # when you delete the user, delete the tags as well
+        on_delete=models.CASCADE,
+    )
+
+    def __str__(self):
+        """
+        creates a string representation of tag name
+        :return: String
+        """
+        return self.name
