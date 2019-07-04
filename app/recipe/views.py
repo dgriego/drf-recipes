@@ -8,7 +8,9 @@ from recipe import serializers
 # Only going to include the list functionality
 
 
-class TagViewSet(viewsets.GenericViewSet, mixins.ListModelMixin):
+class TagViewSet(viewsets.GenericViewSet,
+                 mixins.ListModelMixin,
+                 mixins.CreateModelMixin):
     """
     Manage tags in the database
     """
@@ -24,3 +26,10 @@ class TagViewSet(viewsets.GenericViewSet, mixins.ListModelMixin):
         """
         # -name returns order in reverse order
         return self.queryset.filter(user=self.request.user).order_by('-name')
+
+    def perform_create(self, serializer):
+        """
+        Create a new tag
+        :param serializer:
+        """
+        serializer.save(user=self.request.user)
