@@ -2,9 +2,7 @@ from rest_framework import viewsets, mixins
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 
-from core.models import Tag
-from core.models import Ingredient
-from core.models import Recipe
+from core.models import Tag, Ingredient, Recipe
 
 from recipe import serializers
 
@@ -25,7 +23,6 @@ class BaseRecipeAttrViewSet(viewsets.GenericViewSet,
     def perform_create(self, serializer):
         """
         Create a new object
-        :param serializer:
         """
         serializer.save(user=self.request.user)
 
@@ -71,3 +68,9 @@ class RecipeViewSet(viewsets.ModelViewSet):
             return serializers.RecipeDetailSerializer
 
         return self.serializer_class
+
+    def perform_create(self, serializer):
+        """
+        Create a new recipe
+        """
+        serializer.save(user=self.request.user)

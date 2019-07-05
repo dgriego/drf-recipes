@@ -23,7 +23,7 @@ class PublicIngredientsApiTests(TestCase):
 
     def test_login_required(self):
         """
-        Test that login is required ot access the endpoint
+        Test that login is required to access the endpoint
         """
         res = self.client.get(INGREDIENTS_URL)
 
