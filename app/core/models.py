@@ -76,7 +76,7 @@ class Ingredient(models.Model):
 
 class Recipe(models.Model):
     """
-    Recipe that conists of Ingredients and Tags
+    Recipe that consists of Ingredients and Tags
     """
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
