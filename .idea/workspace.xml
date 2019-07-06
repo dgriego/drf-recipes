@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ddf25ee-d5d4-4085-9c1b-eff818a170de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/recipe/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recipe/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/recipe/tests/test_ingredients_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recipe/tests/test_ingredients_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/recipe/tests/test_recipe_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recipe/tests/test_recipe_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/recipe/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recipe/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/recipe/tests/test_recipe_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="175" column="35" lean-forward="true" selection-start-line="175" selection-start-column="35" selection-end-line="175" selection-end-column="35" />
+            <state relative-caret-position="283">
+              <caret line="209" column="11" lean-forward="true" selection-start-line="209" selection-start-column="11" selection-end-line="209" selection-end-column="11" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
                 <element signature="e#413#476#0" expanded="true" />
@@ -57,6 +53,8 @@
                 <element signature="e#2939#3357#0" expanded="true" />
                 <element signature="e#3443#3914#0" expanded="true" />
                 <element signature="e#3963#4638#0" expanded="true" />
+                <element signature="e#4683#5436#0" expanded="true" />
+                <element signature="e#5473#6112#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/recipe/tests/test_ingredients_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="982">
-              <caret line="60" column="47" lean-forward="true" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
+            <state relative-caret-position="254">
+              <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
                 <element signature="e#470#495#0" expanded="true" />
@@ -75,6 +73,19 @@
                 <element signature="e#1671#2227#0" expanded="true" />
                 <element signature="e#2287#2600#0" expanded="true" />
                 <element signature="e#2656#2878#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/user/tests/test_user_api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#4626#5150#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,17 +115,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/recipe/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="59" column="59" lean-forward="true" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="59" />
+            <state relative-caret-position="370">
+              <caret line="65" column="11" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
                 <element signature="e#597#800#0" expanded="true" />
                 <element signature="e#852#970#0" expanded="true" />
                 <element signature="e#1658#1861#0" expanded="true" />
-                <element signature="e#1887#2084#0" expanded="true" />
                 <element signature="e#2146#2237#0" expanded="true" />
               </folding>
             </state>
@@ -158,6 +168,7 @@
       <find>core_recipe</find>
       <find>import</find>
       <find>import pdb</find>
+      <find>patch</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -293,12 +304,12 @@
       <workItem from="1561757134248" duration="6832000" />
       <workItem from="1562037443854" duration="4516000" />
       <workItem from="1562043010881" duration="20113000" />
-      <workItem from="1562289453622" duration="11897000" />
+      <workItem from="1562289453622" duration="13435000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46251000" />
+    <option name="totallyTimeSpent" value="47789000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="555" y="0" width="1365" height="1080" extended-state="0" />
@@ -442,21 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/user/tests/test_user_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <element signature="e#3518#3681#0" expanded="true" />
-            <element signature="e#3806#4031#0" expanded="true" />
-            <element signature="e#4031#4301#0" expanded="true" />
-            <element signature="e#4406#4571#0" expanded="true" />
-            <element signature="e#4621#5010#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/user/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -500,33 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/recipe/tests/test_tags_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1372">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-            <element signature="e#834#1024#0" expanded="true" />
-            <element signature="e#1068#1629#0" expanded="true" />
-            <element signature="e#2585#2811#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/tests/test_models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <element signature="e#210#383#0" expanded="true" />
-            <element signature="e#1667#1879#0" expanded="true" />
-            <element signature="e#1924#2174#0" expanded="true" />
-            <element signature="e#2215#2508#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/core/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -547,22 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/recipe/tests/test_ingredients_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="982">
-          <caret line="60" column="47" lean-forward="true" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-            <element signature="e#470#495#0" expanded="true" />
-            <element signature="e#540#734#0" expanded="true" />
-            <element signature="e#884#1071#0" expanded="true" />
-            <element signature="e#1671#2227#0" expanded="true" />
-            <element signature="e#2287#2600#0" expanded="true" />
-            <element signature="e#2656#2878#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/core/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="557">
@@ -574,28 +527,6 @@
             <element signature="e#1610#1626#0" expanded="true" />
             <element signature="e#1894#1910#0" expanded="true" />
             <element signature="e#2442#2459#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/recipe/tests/test_recipe_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="175" column="35" lean-forward="true" selection-start-line="175" selection-start-column="35" selection-end-line="175" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-            <element signature="e#413#476#0" expanded="true" />
-            <element signature="e#380#464#0" expanded="true" />
-            <element signature="e#530#627#0" expanded="true" />
-            <element signature="e#357#594#0" expanded="true" />
-            <element signature="e#718#743#0" expanded="true" />
-            <element signature="e#787#962#0" expanded="true" />
-            <element signature="e#1083#1266#0" expanded="true" />
-            <element signature="e#1313#1718#0" expanded="true" />
-            <element signature="e#1778#2320#0" expanded="true" />
-            <element signature="e#2939#3357#0" expanded="true" />
-            <element signature="e#3443#3914#0" expanded="true" />
-            <element signature="e#3963#4638#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -612,15 +543,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/recipe/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="59" column="59" lean-forward="true" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="59" />
+        <state relative-caret-position="370">
+          <caret line="65" column="11" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
             <element signature="e#597#800#0" expanded="true" />
             <element signature="e#852#970#0" expanded="true" />
             <element signature="e#1658#1861#0" expanded="true" />
-            <element signature="e#1887#2084#0" expanded="true" />
             <element signature="e#2146#2237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/recipe/tests/test_tags_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+            <element signature="e#834#1024#0" expanded="true" />
+            <element signature="e#1068#1629#0" expanded="true" />
+            <element signature="e#2250#2531#0" expanded="true" />
+            <element signature="e#2585#2811#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/recipe/tests/test_ingredients_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+            <element signature="e#470#495#0" expanded="true" />
+            <element signature="e#540#734#0" expanded="true" />
+            <element signature="e#884#1071#0" expanded="true" />
+            <element signature="e#1671#2227#0" expanded="true" />
+            <element signature="e#2287#2600#0" expanded="true" />
+            <element signature="e#2656#2878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/tests/test_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#210#383#0" expanded="true" />
+            <element signature="e#1667#1879#0" expanded="true" />
+            <element signature="e#1924#2174#0" expanded="true" />
+            <element signature="e#2215#2508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/user/tests/test_user_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#4626#5150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/recipe/tests/test_recipe_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="209" column="11" lean-forward="true" selection-start-line="209" selection-start-column="11" selection-end-line="209" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+            <element signature="e#413#476#0" expanded="true" />
+            <element signature="e#380#464#0" expanded="true" />
+            <element signature="e#530#627#0" expanded="true" />
+            <element signature="e#357#594#0" expanded="true" />
+            <element signature="e#718#743#0" expanded="true" />
+            <element signature="e#787#962#0" expanded="true" />
+            <element signature="e#1083#1266#0" expanded="true" />
+            <element signature="e#1313#1718#0" expanded="true" />
+            <element signature="e#1778#2320#0" expanded="true" />
+            <element signature="e#2939#3357#0" expanded="true" />
+            <element signature="e#3443#3914#0" expanded="true" />
+            <element signature="e#3963#4638#0" expanded="true" />
+            <element signature="e#4683#5436#0" expanded="true" />
+            <element signature="e#5473#6112#0" expanded="true" />
           </folding>
         </state>
       </provider>

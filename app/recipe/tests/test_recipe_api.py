@@ -41,7 +41,7 @@ def sample_recipe(user, **params):
     Create and return a sample recipe
     """
     defaults = {
-        'title': 'spagetti',
+        'title': 'spaghetti',
         'time_minutes': 20,
         'price': 100.00
     }
@@ -186,3 +186,49 @@ class PrivateRecipesApiTests(TestCase):
         self.assertEqual(ingredients.count(), 2)
         self.assertIn(ingredient1, ingredients)
         self.assertIn(ingredient2, ingredients)
+
+    def test_partial_update_recipe(self):
+        """
+        Test updating recipe with patch
+        """
+        recipe = sample_recipe(user=self.user, title='Test Patch Recipe')
+        recipe.tags.add(sample_tag(user=self.user))
+        new_tag = sample_tag(user=self.user, name='Curry')
+
+        payload = {'title': 'Butts', 'tags': [new_tag.id]}
+        url = detail_url(recipe.id)
+        self.client.patch(url, payload)
+
+        # refreshes database after updates have been made
+        recipe.refresh_from_db()
+        self.assertEqual(recipe.title, payload['title'])
+        tags = recipe.tags.all()
+        self.assertEqual(tags.count(), 1)
+        self.assertIn(new_tag, tags)
+
+    def test_full_update_recipe(self):
+        """
+        Test updating recipe with put
+        """
+        recipe = sample_recipe(user=self.user)
+        recipe.tags.add(sample_tag(user=self.user))
+
+        # create the recipe with tags, but then call
+        # the update without any tags, this should
+        # remove tags if update is successful
+        payload = {
+            'title': 'Farts',
+            'time_minutes': 100,
+            'price': 50.00
+        }
+
+        url = detail_url(recipe.id)
+        self.client.put(url, payload)
+
+        recipe.refresh_from_db()
+        self.assertEqual(recipe.title, payload['title'])
+        self.assertEqual(recipe.time_minutes, payload['time_minutes'])
+        self.assertEqual(recipe.price, payload['price'])
+        # get the recipes tags
+        tags_count = recipe.tags.count()
+        self.assertEqual(tags_count, 0)
