@@ -9,14 +9,17 @@ COPY ./requirements.txt /requirements.txt
 # using no-cache here to minimize amount of extra dependencies
 # that will be installed
 # these packages will remain in the container
-RUN apk add --update --no-cache postgresql-client
+RUN apk add --update --no-cache postgresql-client \
+    # pillow dependencies
+    jpeg-dev zlib-dev freetype-dev lcms2-dev openjpeg-dev \
+    tiff-dev tk-dev tcl-dev harfbuzz-dev fribidi-dev
 
 # install temporary packages that will be removed after requirements
 # are met and needed packages are installed
 # virtual flag setups up an alias for this installation (temporary build dependencies)
 # will remove the packages after the build/installation step is completed
 RUN apk add --update --no-cache --virtual .tmp-build-deps \
-    gcc libc-dev linux-headers postgresql-dev musl-dev jpeg-dev zlib zlib-dev
+    gcc libc-dev linux-headers postgresql-dev musl-dev
 RUN pip install -r /requirements.txt
 # now run command to delete temp deps
 RUN apk del .tmp-build-deps
